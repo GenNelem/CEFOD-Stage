@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="/index.html">
     <script src="https://kit.fontawesome.com/ce5fb88a6e.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="shop-body">
+
  <!-- Header Section -->
  <header>
-
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo"><img src="/frontend/img/logo zamanna.png" alt=""></a>
             <ul class="menu">
-                <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-                <li><a href="#">Logout <i class="fa-solid fa-power-off"></i></a> </li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/frontend/shop.html">Shop</a></li>
+                <li><a href="/frontend/about.html">About</a></li>
+                <li><a href="/frontend/contact.html">Contact</a></li>
+                <li><a href="/frontend/login.html">Logout</a> </li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -28,11 +28,49 @@
                 <div class="line"></div>
             </div>
         </div>
-    </nav>
-
+    </nav>    
 </header>
+<br>
+   <section class="shopping">
+      
+       <div class="cart">
+         <h2 class="cart-title">Your cart  <!-- cart icon -->
+            <i class="fa-solid fa-cart-shopping bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+            <!-- cart --></h2>
+         <!-- content -->
+         <div class="cart-content">
+            <div class="cart-box">
+                <img src="/frontend/img/images (5).jpeg" alt="">
+                <div class="detail-box">
+                    <div class="cart-product-title"></div>
+                        <div class="cart-price">5000 FCFA
+                            <input 
+                            type="number"
+                            name=""
+                            id=""
+                            value="1"
+                            class="cart-quantity"
+                            />
+                        </div>
+                        <!-- remove item -->
+                        
+                </div>
+            </div>
+              <!-- Total -->
+         <div class="total">
+             <div class="total-title">Total</div>
+             <div class="total-price">0 FCFA</div>
+         </div>
+         <!-- buy button -->
+         <button type="button" class="btn-buy">Pay Now</button>
+         <!-- close cart -->
+         <i class="fa-solid fa-x bx bx-x" id="close-cart"></i>
+         </div>
+       
+       </div>
+   </section>
+ 
 
-<a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
     
 </body>
 </html>

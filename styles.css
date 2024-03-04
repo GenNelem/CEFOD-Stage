@@ -7,6 +7,7 @@ body {
     background-color: rgb(199, 235, 199);
     color: #fff;
     padding: 10px 0;
+    width: 100%;
 }
 
 .container {
@@ -243,6 +244,7 @@ body {
         padding: 15px;
         perspective: 100px;
         margin-bottom: 0;
+    
       }
     
       img{
@@ -277,10 +279,12 @@ body {
         padding: 30px 0;
     }
     
-    .container {
+    .footer .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
+        display: flex;
+        flex-direction: column;
     }
     
     .row {
@@ -330,8 +334,58 @@ body {
     
 
     /* SHOP PAGE */
-    .fa-arrow-left{
-        font-size: 2rem;
-        color: #2f6944;
-        margin-left: 1rem;
+    .shop-body{
+        background-color: rgb(130, 167, 130);
+    }
+    .shopping{
+        position: relative;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-top: 8rem;
+        justify-content: flex-end;
+        display: flex;
+        background-color: #cce8c5;
+    }
+    .cart
+{
+    margin-right: 8rem;
+}
+    .total{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 1.5rem;
+        border-top: 1px solid black;
+    }
+    .total-tile{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 1rem;
+        
+    }
+    .total-price{
+        font-size: 1.5rem;
+        margin: 1rem 0 0 0.7rem;
+    }
+    .btn-buy {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem auto;
+        width: 100%;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 2rem;
+        background: #66c9a3;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 500;
+        cursor: pointer;
+        height: 2rem;
+        align-items: center;
+    }
+    #close-cart{
+        position: absolute;
+        top: 1rem;
+        right: 0.8rem;
+        cursor: pointer;
     }
