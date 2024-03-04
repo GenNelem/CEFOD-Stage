@@ -15,7 +15,7 @@
   --main-color: #fd4646;
   --text-color: #02ac70;
   --bg-color: #fff;
-  --container-color: #1e1e2a;
+  --container-color: rgb(199, 235, 199);
 }
 img {
   width: 100%;
@@ -47,15 +47,15 @@ section {
 }
 
 .menu li a {
-  color: #516d04;
+  color: #e3fc9e;
   text-decoration: none;
   padding: 10px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s;
 
 }
 
 .menu li a:hover {
-  transform: scale(1.5);
+  color: #55ea3e;
 }
 .burger {
   display: none;
@@ -113,7 +113,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--container-color);
+  background:rgb(6, 61, 6);
   box-shadow: 0 1px 4px hsla(0, 0%, 98%, 0.1);
   z-index: 100;
 }
