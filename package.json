@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-website-with-payment",
+  "name": "zamanna-with-payment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nelem Genevieve",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
