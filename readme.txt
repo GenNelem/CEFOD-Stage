@@ -5,7 +5,7 @@ Step 2:
 Exract Files And Open Folder With VS Code. And Put Your Stripe API Key In .env File.
 
 Step 3:
-In Terminal Type 'npm install' It Will Install Some Packajes.
+In Terminal Type 'npm install' It Will Install Some Packajes(npm install stripe  express.js nodemon dotenv)
 
 Step 4:
 After Packajes Installation Type 'npm Start' in terminal it will start the server at 3000 port.

@@ -3,50 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.html">
-    <script src="https://kit.fontawesome.com/ce5fb88a6e.js" crossorigin="anonymous"></script>
-    <title>Contact Us</title>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <form id="contactForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-
-            // Collect form data
-            const formData = new FormData(this);
-
-            // Send form data to the server-side script
-            fetch('/submit-contact-form', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => {
-                if (response.ok) {
-                    return response.text();
-                }
-                throw new Error('Network response was not ok.');
-            })
-            .then(data => {
-                console.log(data); // Handle the response from the server
-                alert('Message sent successfully!'); // You can display a success message here
-            })
-            .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
-                alert('An error occurred while sending your message.'); // You can display an error message here
-            });
-        });
-    </script>
-    <script src="/backend/routes/server.js"> </script>
+     <!-- Navbar -->
+     <header>
+        <!-- Nav -->
+        <div class="nav container">
+          <!-- Logo -->
+          <a href="#" class="logo"><img src="./img/logo zamanna.png" alt=""></a>
+          <ul class="menu">
+            <li><a href="/index.html">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="shop.html">My account</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./">Logout<i class="fa-solid fa-power-off"></i></a> </li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+   
+    <script src="js/send_email.js"></script>
 </body>
 </html>
